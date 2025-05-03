@@ -21,20 +21,6 @@ public class AlertUtils {
         alert.showAndWait();
     }
 
-    public static void showWarning(String message) {
-        Alert alert = new Alert(Alert.AlertType.WARNING);
-        alert.setTitle("Warning");
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    }
 
-    public static boolean showConfirmation(String title, String content) {
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(content);
 
-        return alert.showAndWait().filter(response -> response == ButtonType.OK).isPresent();
-    }
 }
