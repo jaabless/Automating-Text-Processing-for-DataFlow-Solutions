@@ -290,7 +290,6 @@ public class TextProcessorApp extends Application {
         VBox root = new VBox(10,
                 inputArea,
                 replacementField,
-//                filePathField,
                 UIFactory.createHBox(new Label("Text Processing:"),matchBtn, replaceBtn, frequencyBtn, replaceFileBtn, clearBtn),
                 UIFactory.createHBox(new Label("Regex Operations:"),regexBox),
                 UIFactory.createHBox(new Label("Batch Processing: "), uploadFileBtn, cleanupOptions, processBtn, exportBtn),
