@@ -30,7 +30,7 @@ public class TextSummarizer {
             sentenceScores.put(sentence, score);
         }
 
-        // 4. Select top N sentences
+        //Select top N sentences
         return sentenceScores.entrySet().stream()
                 .sorted(Map.Entry.<String, Double>comparingByValue().reversed())
                 .limit(numSentences)
