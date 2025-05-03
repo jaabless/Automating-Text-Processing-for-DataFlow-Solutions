@@ -76,7 +76,7 @@ public class TextProcessorController {
         try {
             return fileHandler.batchProcessFile(path, filter, transformer);
         } catch (IOException e) {
-            throw new FileProcessingException("Batch processing failed for file: " + path, e);
+            throw new FileProcessingException("Batch processing failed for : " + path, e);
         }
     }
 
