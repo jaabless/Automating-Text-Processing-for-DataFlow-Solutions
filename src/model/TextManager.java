@@ -12,8 +12,8 @@ public class TextManager {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof TextManager)) return false;
-        TextManager that = (TextManager) o;
-        return Objects.equals(content, that.content);
+        TextManager text = (TextManager) o;
+        return Objects.equals(content, text.content);
     }
 
     @Override
