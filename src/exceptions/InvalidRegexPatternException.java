@@ -5,7 +5,7 @@ public class InvalidRegexPatternException extends RuntimeException {
         super(message);
     }
 
-    public InvalidRegexPatternException(String message, Throwable cause) {
-        super(message, cause);
+    public InvalidRegexPatternException(String messages, Throwable cause) {
+        super(messages, cause);
     }
 }
