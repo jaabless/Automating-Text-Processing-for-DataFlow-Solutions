@@ -7,6 +7,7 @@ import java.util.List;
 public class CollectionManager {
     private final List<TextManager> entries = new ArrayList<>();
 
+    //collections operations
     public void addEntry(String content) {
         TextManager entry = new TextManager(content);
         if (!entries.contains(entry)) {
