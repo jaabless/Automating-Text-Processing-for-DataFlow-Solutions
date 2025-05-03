@@ -22,7 +22,7 @@ public class TextProcessor {
     public Map<String, Long> analyzeWordFrequency(String text) {
         return Arrays.stream(text.toLowerCase().split("\\W+"))
                 .filter(word -> word.matches("[a-zA-Z]+"))  // Removed non-alphabetic values
-                .parallel()  // Enables parallel processing for large files
+                .parallel()
                 .collect(Collectors.groupingBy(w -> w, Collectors.counting()));
     }
 }
