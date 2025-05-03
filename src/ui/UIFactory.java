@@ -13,13 +13,6 @@ public class UIFactory {
         return btn;
     }
 
-    public static GridPane createGridPane(int padding) {
-        GridPane grid = new GridPane();
-        grid.setHgap(10);
-        grid.setVgap(10);
-        grid.setPadding(new Insets(padding));
-        return grid;
-    }
 
     public static HBox createHBox(Node... nodes) {
         HBox box = new HBox(10, nodes);
