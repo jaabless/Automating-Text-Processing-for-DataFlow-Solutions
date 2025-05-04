@@ -19,6 +19,7 @@ public class LoggerUtil {
 
     }
 
+    //logger methods
     public static void logInfo(String message) {
         logger.info(message);
     }
