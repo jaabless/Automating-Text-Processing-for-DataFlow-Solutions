@@ -34,6 +34,7 @@ public class FileHandlerUtil {
         }
     }
 
+    //handle batch processing
     public List<String> batchProcessFile(String path, Predicate<String> filter, Function<String, String> transformer) throws IOException {
         List<String> result = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
